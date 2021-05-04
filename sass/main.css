@@ -1,0 +1,336 @@
+body,
+html {
+  height: 90%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+/* the part for the navigation bar inside the hero image*/
+.bg-img {
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.img-responsive {
+  width: auto;
+  height: auto;
+}
+
+/* The navbar */
+.topnav {
+  margin-top: 6%;
+  display: inline;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0.6%;
+  margin-left: 20px;
+  float: right;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  border-radius: 10px;
+  background-color: rgba(132, 211, 248, 0.3);
+  color: black;
+}
+
+/*end of the navigation*/
+h1 {
+  color: rgba(201, 210, 216, 0.6);
+  text-shadow: 2px 2px rgba(184, 184, 184, 0.6);
+  text-transform: uppercase;
+}
+
+p.lead {
+  margin-top: 1rem;
+  text-shadow: rgba(175, 174, 174, 0.6);
+  text-transform: uppercase;
+  color: white;
+}
+
+img {
+  border-radius: 3px;
+}
+
+.page-header {
+  position: relative;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  padding: 7.5% 0;
+  background-image: url("/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+splash footer {
+  background-color: #dd4814;
+  text-align: center;
+  color: white;
+  padding: 2.5%;
+}
+
+splash footer a {
+  color: white;
+  border-bottom: 1px dotted white;
+}
+
+splash footer a:hover, splash footer a:active, splash footer a:focus {
+  color: white;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+.buffer {
+  width: 100%;
+  height: auto;
+}
+
+.text-picture {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.text-picture.text-picture--gray-bg {
+  background-color: #eee;
+}
+
+.text-picture .text-picture__text h2 {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .text-picture .text-picture__text p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.text-picture .text-picture__picture {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-picture .text-picture__picture img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parte-description {
+  margin-top: 2rem;
+  padding: 1rem;
+  max-width: 100%;
+  height: auto;
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* I only want Flexbox to kick in for larger devices.*/
+/* i.e. I want to keep bootstraps mobile grid scaffolding intact.*/
+@media (min-width: 768px) {
+  .row--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row--flex .row--flex__col {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .row--flex .row--flex__col--center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .row--flex .row--flex__col--bottom {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+footer p {
+  text-align: center;
+}
+
+/*this is for the css card images*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #f0f0f0;
+}
+
+body {
+  color: gray;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid lightgray;
+  color: lightgray;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover .card__image {
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+          filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+
+.card__image--river {
+  background-image: url(/lakeOs.jpg);
+}
+
+.card__image--record {
+  background-image: url(https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+}
+
+.card__image--fence {
+  background-image: url(https://images.unsplash.com/photo-1560026301-88340cf16be7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+}
+
+.card__title {
+  color: gray;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+/*# sourceMappingURL=main.css.map */
